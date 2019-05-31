@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calligrafixel - Fun to Fit Types</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function ShowImage(obj)
+        {
+//            obj.nextElementSibling.style.display = "block";
+            obj.nextElementSibling.style.opacity = 1;
+        }
+        
+        function HideImage(obj)
+        {
+            obj.nextElementSibling.style.opacity = 0;   
+//            setTimeout(function(){
+//                obj.nextElementSibling.style.display = "none";}, 500);
+        }
+    </script>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <header>
+        <a href="index.html">HOME</a>
+        <span></span>
+        <a href="square.html">SQUARE</a>
+        <a href="paper.html">PAPER</a>
+        <span></span>
+        <a href="bottle.html">BOTTLE</a>
+        <span></span>
+        <a href="contact.html" id="current_header">CONTACT</a>
+    </header>
+    
+    
+    <div id="main_contact">
+        <div id="contact_list">
+            <a href="http://instagram.com/calligrafixel" target="_blank">Instagram</a>
+            <span><br></span>
+            <a href="http://notefolio.net/calligrafixel" target="_blank">NoteFolio</a>
+            <span><br></span>
+            <div id="PhoneNumber">010.3582.9094</div>
+        </div>
+    </div>
+    
+    
+    <aside>
+        <img src="logo.png" alt="" id="logo">
+        <span>Copyright 2017-2019. Calligrafixel.&ensp;All Artwork Rights Reserved.</span>
+        
+    </aside>
+    
+    
+    <footer style="padding-bottom: 0rem;">
+        <span>Prototype of PortFolio&emsp;-&emsp;Inspired from </span>
+        <span id="crypto">Cryptogram</span>
+    </footer>
+</body>
+</html>

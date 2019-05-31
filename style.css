@@ -1,0 +1,176 @@
+body{
+    background: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+}
+header{
+    float: right;
+    
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+    margin-right: 4rem;
+}
+header > a
+{
+    font-size: 1.2rem;
+    color: #555;
+    filter: blur(1.5px);
+    text-decoration-line: none;
+    margin-right: 1.5rem;
+}
+header > span
+{
+    margin-right: 3rem;
+}
+#current_header{
+    color: #fff;
+}
+
+
+#main_home{
+    margin-right: 0rem;
+    width: 45rem;
+    float: right;
+    clear: right;
+}
+.ArtProject{
+    margin-bottom: 1.2rem;
+}
+.ArtTitle{
+    font-size: 4rem;
+
+    line-height: .9;
+    color: #888;
+    filter: blur(3px);
+}
+.ArtTitle:hover, .year:hover, header > a:hover{
+    color: #fff;
+    filter: blur(1px);
+}
+.ArtImage{
+    width: 30rem;
+    height: 30rem;
+    position: fixed;
+    top: 18rem;
+    right: 51rem;
+
+    opacity: 0;
+/*            display: none;*/
+
+    transition-duration: .5s
+}
+.year{
+    font-size: 2.5rem;
+    line-height: .9;
+    color: #555; 
+    filter: blur(2px);
+    margin-bottom: 3rem;
+}
+
+#main_square{
+    width: 62rem;
+    clear: both;
+    margin: auto;
+    
+    text-align: center;
+    line-height: 0;
+}
+.SquareImage{
+    width: 15rem;
+    margin: .0375rem;
+}
+
+.main_bottle{
+    column-count: 2;
+    
+    clear: both;
+    float: right;
+    width: 80rem;
+    margin-right: 5rem;
+}
+.Bottle{
+    display: flex;
+/*    justify-content:center;*/
+/*    align-items:center;*/
+    width: 35rem;
+    margin-bottom: 1rem;
+}
+.BottleImage{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #00f;
+    margin-right: 1rem;
+}
+.BottleTitle{
+    color: white;
+    font-size: 5rem;
+    padding-top: .5rem;
+    line-height: .9;
+}
+
+
+#main_contact{
+    text-align: center;
+    clear: right;
+    
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#contact_list > *{
+    font-size: 5rem;
+    color: white;
+    text-decoration-line: none;
+    
+    display: inline;
+    line-height: 1.2;
+}
+#PhoneNumber{
+    font-size: 4rem;
+}
+
+
+aside{
+    position: fixed;
+    
+    display: flex;
+/*    justify-content:center;*/
+    align-items:center;
+    
+    transform-origin: 0%;
+    transform: rotate(90deg);
+    
+    top: 16rem;
+    left: 2rem;
+    
+    opacity: .3
+}
+aside > span{
+    font-weight: 300;
+    font-size: .8rem;
+    color: white;
+}
+#logo{
+    width: 4rem;
+    padding-right: 1rem;
+    padding-bottom: .3rem;
+}
+
+
+footer{
+    clear: both;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+    
+    opacity: .2;
+}
+footer > span{
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+}
+#crypto{
+    font-weight: 800;
+}

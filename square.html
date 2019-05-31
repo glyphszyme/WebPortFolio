@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calligrafixel - Fun to Fit Types</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function ShowImage(obj)
+        {
+//            obj.nextElementSibling.style.display = "block";
+            obj.nextElementSibling.style.opacity = 1;
+        }
+        
+        function HideImage(obj)
+        {
+            obj.nextElementSibling.style.opacity = 0;   
+//            setTimeout(function(){
+//                obj.nextElementSibling.style.display = "none";}, 500);
+        }
+    </script>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <header>
+        <a href="index.html">HOME</a>
+        <span></span>
+        <a href="square.html" id="current_header">SQUARE</a>
+        <a href="paper.html">PAPER</a>
+        <span></span>
+        <a href="bottle.html">BOTTLE</a>
+        <span></span>
+        <a href="contact.html">CONTACT</a>
+    </header>
+    
+    
+    <div id="main_square">
+        <script>
+            var ArtNum = 25;
+            
+            for(var i=ArtNum-1; i>0; i--){   
+                for(var j=4; j>0; j--){
+                    document.write('<img class="SquareImage" src="square/' + i + '.' + j + '.png">');
+                }
+            }
+        </script>
+    </div>
+    
+    
+    <aside>
+        <img src="logo.png" alt="" id="logo">
+        <span>Copyright 2017-2019. Calligrafixel.&ensp;All Artwork Rights Reserved.</span>
+        
+    </aside>
+    
+    
+    <footer>
+        <span>Prototype of PortFolio&emsp;-&emsp;Inspired from </span>
+        <span id="crypto">Cryptogram</span>
+    </footer>
+</body>
+</html>
