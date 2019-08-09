@@ -1,3 +1,7 @@
+:root{
+    --art-size: 16.8rem;
+}
+
 body{
     background-color: white;
     font-weight: 900;
@@ -63,9 +67,8 @@ main{
     left: 3.0rem;
 }
 
+
 .square, .paper{
-    width: 16.8rem;
-    
     float: left;
     text-align: right;
     
@@ -75,19 +78,22 @@ main{
     transition: 1s;
 }
 .square{
-    height: 16.8rem;
+    width: var(--art-size);
+    height: var(--art-size);
 }
 .paper{
-    height: 23.76rem;
+    width: var(--art-size);
+    height: calc(var(--art-size)/210*297);
 }
-.square:hover, .paper:hover{
+.square:hover, .square:active,
+.paper:hover, .paper:active{
     background-color: white;
     transition: 1s;
 }
 
 
 .title{
-    font-size: 2rem;
+    font-size: calc(var(--art-size)/8.4);
     line-height: 1;
     color: white;
 /*    background-color: red;*/
@@ -110,25 +116,26 @@ main{
     position: relative;
     top: -24.1rem;
 }
-.title:hover{
+.title:hover, .title:active{
     opacity: 0;
     transition: 1s;
 }
 
 
 .sq{
-    width: 16.8rem;
-    height: 16.8rem;
+    width: var(--art-size);
+    height: var(--art-size);
 }
 .pp{
-    width: 16.8rem;
-    height: 23.76rem;
+    width: var(--art-size);
+    height: calc(var(--art-size)/210*297);
 }
 .sq, .pp{
     mix-blend-mode: multiply;
     transition: .3s;
 }
-.sq:hover, .pp:hover{
+.sq:hover, .sq:active,
+.pp:hover, .pp:active{
     mix-blend-mode: normal;
     transition: .3s;
 }

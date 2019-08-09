@@ -1,0 +1,67 @@
+:root{
+    --art-size: 23rem;
+}
+
+#header_bg{
+    height: 27rem;
+    background-color: blue;
+}
+#header_text{
+    top: 4.6rem;
+    right: 2rem;
+}
+#page_title{
+    font-size: 7rem;
+}
+#page_subtitle{
+    font-size: 2.7rem;
+    margin-top: -.1rem;
+    margin-right: 0.2rem;
+}
+
+main{
+    margin-top: 28rem;
+    width: 50rem;
+}
+#index_square, #index_paper{
+    transform: rotate(0);
+}
+#index_square{
+    top: 20rem;
+    left: 10rem;
+}
+#index_paper{
+    display: none;
+}
+
+#index_square{
+    top: 17.8rem;
+    left: 1.3rem;
+}
+#index_paper{
+    top: 33.1rem;
+    left: 3rem;
+}
+
+.square > .title{
+    top: -21rem;
+    right: -5rem;
+}
+.paper > .title{
+    top: -30rem;
+    right: -5rem;
+}
+
+footer{
+    position: fixed;
+    height: 100%;
+    right: 50rem;
+    transform: rotate(90deg);
+    text-align: center;
+    border: 1px solid red;
+}
+#copy{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ccc;
+}
