@@ -1,0 +1,146 @@
+body{
+    background-color: white;
+    font-weight: 900;
+}
+
+div{
+    font-family: 'Fira Sans', sans-serif;
+}
+header{
+    line-height: .9;
+    text-align: right;
+}
+#header_bg{
+    width: 130rem;
+    height: 20rem;
+    background-color: blue;
+    
+    position: fixed;
+    top: -13.1rem;
+    left: -10rem;
+}
+#header_text{
+    color: white;
+    
+    position: fixed;
+    top: 3.4rem;
+    right: 7rem;
+}
+#page_title{
+    font-weight: 900;
+    font-size: 2rem;
+}
+#page_subtitle{
+    font-weight: 700;
+    font-size: .9rem;
+    margin-top: .1rem;
+    margin-right: -1.1rem;
+}
+
+
+main{
+    margin-top: 11.4rem;
+    margin-left: 11rem;
+    
+    width: 700rem;
+    
+    overflow-x: hidden;
+}
+#index_square, #index_paper{
+    font-size: 4.3rem;
+    font-weight: 900;
+    color: blue;
+    
+    position: absolute;
+    transform: rotate(-90deg);
+}
+#index_square{
+    top: 17.8rem;
+    left: 1.3rem;
+}
+#index_paper{
+    top: 33.1rem;
+    left: 3.0rem;
+}
+
+.square, .paper{
+    width: 16.8rem;
+    
+    float: left;
+    text-align: right;
+    
+    margin: .3rem;
+    
+    background-color: blue;
+    transition: 1s;
+}
+.square{
+    height: 16.8rem;
+}
+.paper{
+    height: 23.76rem;
+}
+.square:hover, .paper:hover{
+    background-color: white;
+    transition: 1s;
+}
+
+
+.title{
+    font-size: 2rem;
+    line-height: 1;
+    color: white;
+/*    background-color: red;*/
+    opacity: 1;
+    transition: 1s;
+}
+.square > .title{
+    width: 13.8rem;
+    height: 13.6rem;
+    padding: 3.3rem 1rem 0rem 2rem;
+
+    position: relative;
+    top: -17.1rem;
+}
+.paper > .title{
+    width: 13.8rem;
+    height: 15rem;
+    padding: 5.3rem 1rem 10rem 2rem;
+
+    position: relative;
+    top: -24.1rem;
+}
+.title:hover{
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.sq{
+    width: 16.8rem;
+    height: 16.8rem;
+}
+.pp{
+    width: 16.8rem;
+    height: 23.76rem;
+}
+.sq, .pp{
+    mix-blend-mode: multiply;
+    transition: .3s;
+}
+.sq:hover, .pp:hover{
+    mix-blend-mode: normal;
+    transition: .3s;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 1.2rem;
+    text-align: center;
+}
+#copy{
+    font-size: .7rem;
+    font-weight: 700;
+    color: #ccc;
+}
